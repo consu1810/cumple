@@ -84,6 +84,7 @@ body {
     height: 100px;
     border: 2px solid #CC99FF;
     margin-bottom: 10px;
+    object-fit: cover; /* Esta línea recorta la foto para que sea un cuadrado perfecto sin deformarla */
     transition: none; /* Sin animaciones suaves, fiel a la época */
 }
 

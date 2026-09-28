@@ -100,14 +100,19 @@ body {
     text-align: center;
 }
 
-/* Foto principal */
-/* Foto principal con tamaño controlado */
-.main-pic {
-    max-width: 100%; /* Evita que la foto sea más ancha que la columna */
-    max-height: 500px; /* Pone un límite de altura para que las fotos verticales no queden gigantes */
+/* Obliga a TODAS las imágenes de la columna central a ir una bajo la otra */
+.dark-flog-center img {
+    display: block; /* Esto es lo que rompe la línea y las apila verticalmente */
+    max-width: 100%;
+    max-height: 500px;
     width: auto;
     height: auto;
     border: 3px solid #FF66B2; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px; /* Crea el espacio entre una foto y la de abajo */
+    box-sizing: border-box;
+}
     
     /* Estas tres líneas centran la foto si es más angosta que la columna */
     display: block;

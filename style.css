@@ -144,3 +144,17 @@ a:hover {
     background-color: #FF66B2 !important;
     text-decoration: none !important;
 }
+
+/* --- CONTENEDOR PARA GOOGLE FORMS --- */
+.google-form-container {
+    margin-top: 15px;
+    text-align: center;
+    border: 2px dashed #FF66B2; /* Le pone el marco rosado punteado */
+    padding: 10px;
+    background-color: #1A001A; /* Fondo morado oscuro por si sobra espacio */
+}
+
+/* Fuerza al iframe a no pasarse del ancho permitido */
+.google-form-container iframe {
+    max-width: 100%;
+}
